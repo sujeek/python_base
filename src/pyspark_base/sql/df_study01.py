@@ -8,8 +8,8 @@ from pyspark.sql import Row
 from pyspark.sql.types import *
 import os
 import sys
-os.environ['SPARK_HOME'] = "/Users/suyongjie/programs/spark-2.4.0-bin-hadoop2.7"
-sys.path.append("/Users/suyongjie/programs/spark-2.4.0-bin-hadoop2.7/python/")
+os.environ['SPARK_HOME'] = "/Users/zhangsan/programs/spark-2.4.0-bin-hadoop2.7"
+sys.path.append("/Users/zhangsan/programs/spark-2.4.0-bin-hadoop2.7/python/")
 
 
 if __name__ == "__main__":
@@ -23,7 +23,7 @@ if __name__ == "__main__":
     sc = spark.sparkContext
 
     # Load a text file and convert each line to a Row.
-    lines = sc.textFile("/Users/suyongjie/PycharmProjects/python_data_stract/src/pds/resource/people.txt")
+    lines = sc.textFile("/Users/zhangsan/PycharmProjects/python_data_stract/src/pds/resource/people.txt")
     parts = lines.map(lambda l: l.split(","))
     people = parts.map(lambda p: Row(name=p[0], age=p[1]))
     schemaString = "name age"

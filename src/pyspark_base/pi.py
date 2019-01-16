@@ -7,8 +7,8 @@ from pyspark import SparkContext
 from pyspark import SparkConf
 from pyspark.sql import SparkSession
 
-os.environ['SPARK_HOME'] = "/Users/suyongjie/programs/spark-2.4.0-bin-hadoop2.7"
-sys.path.append("/Users/suyongjie/programs/spark-2.4.0-bin-hadoop2.7/python/")
+os.environ['SPARK_HOME'] = "/Users/zhangsan/programs/spark-2.4.0-bin-hadoop2.7"
+sys.path.append("/Users/zhangsan/programs/spark-2.4.0-bin-hadoop2.7/python/")
 
 if __name__ == "__main__":
     """

@@ -19,9 +19,9 @@ def get_arguments():
     parser.add_argument("--input_path", "-i", help="input path", dest="input_path")
     parser.add_argument("--output_path", "-o", help="output path", dest="output_path")
 
-    parser.set_defaults(input_file_name="/Users/suyongjie/programs/pssh.py")
-    parser.set_defaults(input_path="/Users/suyongjie/programs/pssh.py")
-    parser.set_defaults(output_path="/Users/suyongjie/programs/pssh.py")
+    parser.set_defaults(input_file_name="/Users/zhangsan/programs/pssh.py")
+    parser.set_defaults(input_path="/Users/zhangsan/programs/pssh.py")
+    parser.set_defaults(output_path="/Users/zhangsan/programs/pssh.py")
     try:
         args = parser.parse_args()
     except Exception, e:
