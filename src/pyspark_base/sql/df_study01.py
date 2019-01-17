@@ -23,7 +23,7 @@ if __name__ == "__main__":
     sc = spark.sparkContext
 
     # Load a text file and convert each line to a Row.
-    lines = sc.textFile("/Users/zhangsan/PycharmProjects/python_data_stract/src/pds/resource/people.txt")
+    lines = sc.textFile("/Users/zhangsan/PycharmProjects/python_base/src/resource/people.txt")
     parts = lines.map(lambda l: l.split(","))
     people = parts.map(lambda p: Row(name=p[0], age=p[1]))
     schemaString = "name age"

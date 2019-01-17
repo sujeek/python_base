@@ -4,7 +4,7 @@ from pyspark import SparkContext
 from operator import add
 
 os.environ['SPARK_HOME'] = "/Users/zhangsan/programs/spark-2.4.0-bin-hadoop2.7"
-sys.path.append("/Users//programs/spark-2.4.0-bin-hadoop2.7/python/")
+sys.path.append("/Users/zhangsan/programs/spark-2.4.0-bin-hadoop2.7/python/")
 
 if __name__ == "__main__":
     sc = SparkContext("local", "reduce")
